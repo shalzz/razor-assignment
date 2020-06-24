@@ -4,9 +4,8 @@ pragma solidity >=0.4.21 <0.7.0;
 
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "@nomiclabs/buidler/console.sol";
-import "./StaticProxy.sol";
 
-contract Greeter is StaticStorage {
+contract Greeter {
   string private greeting;
 
   constructor(string memory _greeting) public {
