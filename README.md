@@ -1,4 +1,4 @@
-# Unipeer
+# Payment Stream
 
 ## Install
 
@@ -6,37 +6,13 @@
 npm install
 ```
 
-## Build
-
-We use buidler.dev
-
-```
-npx buidler compile
-```
-
-## Generate Types for contracts
-
-```
-npx buidler compile && npm generate-types
-```
-
-## Debug
-
-To get details about the transactions being executed, run the buidlerevm
-separately in another terminal.
-
-```
-npx buidler node
-```
-
-Then run your tests with the localhost network
-
-```
-npx buidler --network localhost test
-```
-
 ## Test
+
+The contract functionality is tested though tests defined in `test/pay-stream.ts`
+To run the test:
 
 ```
 npx buidler test
 ```
+
+You can edit the values in the test script and try different scenarios.
