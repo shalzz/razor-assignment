@@ -20,6 +20,7 @@
     "./node_modules/@nomiclabs/buidler-truffle5/src/type-extensions.d.ts",
     "./node_modules/buidler-gas-reporter/src/type-extensions.d.ts",
     "./node_modules/truffle-typings/index.d.ts",
+    "./node_modules/web3/node_modules/web3-eth/types/index.d.ts",
     "./types/truffle-contracts/index.d.ts"
   ]
 }

@@ -57,12 +57,13 @@ contract StreamPay {
 
   function withdrawFromStream() public {
     uint256 balance = balanceOf(_recipient);
-    require(balance >= 0, "No balance to withdraw yet.");
+    require(balance > 0, "No balance to withdraw yet.");
+    console.log(balance);
 
     _remainingBalance = SafeMath.sub(_remainingBalance, balance);
 
-    payable(_recipient).transfer(balance);
     emit WithdrawFromStream(_recipient, balance);
+    payable(_recipient).transfer(balance);
   }
 
   function balanceOf(address who) public view returns (uint256 balance) {
